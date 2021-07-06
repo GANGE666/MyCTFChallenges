@@ -6,21 +6,22 @@
 
 ## Table of Contents
 
-* [0CTF/TCTF 2021 Quals FA51R_RE & FA51R_PWN WriteUp](#0CTF/TCTF 2021 Quals FA51R_RE & FA51R_PWN WriteUp)
+* [0CTF/TCTF 2021 Quals FA51R_RE &amp; FA51R_PWN WriteUp](#0ctftctf-2021-quals-fa51r_re--fa51r_pwn-writeup)
+  * [Table of Contents](#table-of-contents)
   * [基本信息](#基本信息)
   * [概述](#概述)
   * [设计思路](#设计思路)
-    * [FASLR](#FASLR)
-    * [二进制俄罗斯方块 in FA51R_RE](#二进制俄罗斯方块 in FA51R_RE)
-    * [FA51R_PWN](#FA51R_PWN)
+     * [FASLR](#faslr)
+     * [二进制俄罗斯方块 in FA51R_RE](#二进制俄罗斯方块-in-fa51r_re)
+     * [FA51R_PWN](#fa51r_pwn)
   * [预期解法](#预期解法)
-    * [FA51R_RE](#FA51R_RE)
-    * [FA51R_PWN](#FA51R_PWN)
+     * [FA51R_RE](#fa51r_re)
+     * [FA51R_PWN](#fa51r_pwn-1)
   * [主要文件列表](#主要文件列表)
   * [环境部署](#环境部署)
   * [解题脚本](#解题脚本)
-  * [Others](#Others)
-  * [Credit](#Credit)
+  * [Others](#others)
+  * [Credit](#credit)
 
 
 

@@ -6,22 +6,22 @@
 
 ## Table of Contents
 
-[0CTF/TCTF 2021 Quals FA51R_RE & FA51R_PWN WriteUp](#0CTF/TCTF 2021 Quals FA51R_RE & FA51R_PWN WriteUp)
-
-* [Basic Information](#Basic Information)
-* [Overview](#Overview)
-* [Design](#Design)
-  * [FASLR](#FASLR)
-  * [Binary Tetris in FA51R_RE](#Binary Tetris in FA51R_RE)
-  * [FA51R_PWN](#FA51R_PWN)
-* [Intended Solution](#Intended Solution)
-  * [FA51R_RE](#FA51R_RE)
-  * [FA51R_PWN](#FA51R_PWN)
-* [List of files](#List of files)
-* [Deployment](#Deployment)
-* [Solution](#Solution)
-* [Others](#Others)
-* [Credit](#Credit)
+* [0CTF/TCTF 2021 Quals FA51R_RE &amp; FA51R_PWN WriteUp](#0ctftctf-2021-quals-fa51r_re--fa51r_pwn-writeup)
+   * [Table of Contents](#table-of-contents)
+   * [Basic Information](#basic-information)
+   * [Overview](#overview)
+   * [Design](#design)
+      * [FASLR](#faslr)
+      * [Binary Tetris in FA51R_RE](#binary-tetris-in-fa51r_re)
+      * [FA51R_PWN](#fa51r_pwn)
+   * [Intended Solution](#intended-solution)
+      * [FA51R_RE](#fa51r_re)
+      * [FA51R_PWN](#fa51r_pwn-1)
+   * [List of files](#list-of-files)
+   * [Deployment](#deployment)
+   * [Solution](#solution)
+   * [Others](#others)
+   * [Credit](#credit)
 
 
 
