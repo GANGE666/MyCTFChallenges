@@ -4,7 +4,26 @@
 
 
 
-[TOC]
+## Table of Contents
+
+[0CTF/TCTF 2021 Quals FA51R_RE & FA51R_PWN WriteUp](#0CTF/TCTF 2021 Quals FA51R_RE & FA51R_PWN WriteUp)
+
+* [Basic Information](#Basic Information)
+* [Overview](#Overview)
+* [Design](#Design)
+  * [FASLR](#FASLR)
+  * [Binary Tetris in FA51R_RE](#Binary Tetris in FA51R_RE)
+  * [FA51R_PWN](#FA51R_PWN)
+* [Intended Solution](#Intended Solution)
+  * [FA51R_RE](#FA51R_RE)
+  * [FA51R_PWN](#FA51R_PWN)
+* [List of files](#List of files)
+* [Deployment](#Deployment)
+* [Solution](#Solution)
+* [Others](#Others)
+* [Credit](#Credit)
+
+
 
 ## Basic Information
 
