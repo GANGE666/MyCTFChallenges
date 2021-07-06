@@ -1,0 +1,67 @@
+#ifndef OBF_H
+#define OBF_H
+
+
+
+// #define JUNK2(idx) __asm{          \
+//   __asm  call next1_junk2_##idx          \
+//   __asm  __emit 0x77          \
+//   __asm  jmp next_junk2_##idx        \
+//   __asm  __emit 0x88          \
+//   __asm  next1_junk2_##idx:            \
+//   __asm  add dword ptr ss:[esp], 1  \
+//   __asm  ret              \
+//   __asm  next_junk2_##idx:              \
+// }
+
+
+// #define JUNK1(idx) __asm{\
+// __asm jmp jlabel##idx \
+// __asm __emit 0x88 \
+// __asm jlabel_##idx : \
+// __asm ret \
+// __asm __emit 0xba \
+// __asm jlabel##idx : \
+// __asm call jlabel_##idx  \
+// }
+
+#define JUNK22(idx) __asm__ __volatile__ (  \
+"call next1_junk2_"#idx"\n\t"    \
+".byte 0x77\n\t"                \
+"jmp next_junk2_"#idx"\n\t"      \
+".byte 0x88\n\t"                \
+"next1_junk2_"#idx":\n\t"        \
+"addq $1, (%rsp)\n\t" \
+"ret\n\t"                       \
+"next_junk2_"#idx":\n\t"         \
+);
+
+#define JUNK11(idx) __asm__ __volatile__ (  \
+"jmp jlabel"#idx"\n\t" \
+".byte 0x88\n\t" \
+"jlabel_"#idx" :\n\t" \
+"ret\n\t" \
+".byte 0xba\n\t" \
+"jlabel"#idx" :\n\t" \
+"call jlabel_"#idx"\n\t"  \
+);
+
+// #define aaa(idx) __asm__ __volatile__ (  \
+//     "call error\n\t"    \
+//     "error:\n\t"        \
+//     "ee"#idx":\n\t"           \
+// );
+
+#define INT3_ANTI_ONLY __asm__ __volatile__ (    \
+        ".byte 0xcc\n\t"    \
+);
+
+
+#define INT3_ANTI *(uint32_t *)(ptr) = res;\
+ __asm__ __volatile__ (    \
+        ".byte 0xcc\n\t"    \
+); \
+res = *(uint32_t *)(ptr);
+
+
+#endif

@@ -1,0 +1,23 @@
+version: '2.2'
+
+services:
+    reverse:
+        build: ./
+        image: fa51r
+        volumes: 
+            - ./share:/home/pwn:ro
+            - ./xinetd:/etc/xinetd.d/xinetd:ro
+            - ./tmp:/tmp:rw
+        ports:
+            - "30333:8888"
+        expose:
+            - "8888"
+        pids_limit: 1024
+        cpus: 1
+        restart: unless-stopped
+        
+#networks:
+#    default:
+#        external:
+#            name: pwn
+
