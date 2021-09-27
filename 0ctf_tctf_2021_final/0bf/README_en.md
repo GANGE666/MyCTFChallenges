@@ -1,4 +1,4 @@
-# 0CTF/TCTF 2021 Quals 0bf WriteUp
+# 0CTF/TCTF 2021 Final 0bf WriteUp
 
 - [中文](./README.md)
 
